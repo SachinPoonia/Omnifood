@@ -18,8 +18,10 @@ html {
 	margin: 0 auto;
 }
 
+/* HEADER*/
+
 header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* Masking the background image.*/
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -30,7 +32,7 @@ header {
 	width: 1140px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); /* Centering the content with raw CSS*/
 }
 
 h1{
@@ -44,6 +46,8 @@ h1{
 	word-spacing: 4px;
 }
 
+/* BUTTON */
+
 .btn:link,
 .btn:visited {
 	display: inline-block;
@@ -51,7 +55,7 @@ h1{
 	padding: 10px 30px;
 	text-decoration: none;
 	border-radius: 200px;
-	transition: background-color 0.5s, border 0.5s, color 0.5s;
+	transition: background-color 0.5s, border 0.5s, color 0.5s; 
 	 
 }
 
@@ -85,12 +89,16 @@ h1{
 	color: #fff;
 }
 
+/* LOGO*/
+
 .logo {
 	height: 100px;
 	width: auto;
 	float: left;
 	margin-top: 20px;
 }
+
+/* NAVIGATION */
 
 .main-nav {
 	float: right;
