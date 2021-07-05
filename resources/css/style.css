@@ -89,6 +89,10 @@ h2:after {
 	margin: 0 auto;
 }
 
+.section-feature .long-copy {
+	margin-bottom: 30px;
+}
+
 .box p {
 	font-size: 90%;
 	line-height: 145%;
@@ -178,5 +182,40 @@ h2:after {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-	border-bottom: 2px solid #e67e22;
+	border-bottom: 2px solid #e67e22; /*Transparent border to come up as Orange color*/
+}
+
+.section-meals {
+	padding: 0;
+}
+
+.meal-showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.meal-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.meal-photo {
+	width: 100%;
+	margin: 0;
+	overflow: hidden; /* To hide the overflow from scaling the images */
+	background-color: #000;
+}
+
+.meal-photo img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: 0.5s;
+}
+
+.meal-photo img:hover {
+	opacity: 1;
+	transform: scale(1.03);
 }
