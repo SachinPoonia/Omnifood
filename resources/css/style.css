@@ -13,10 +13,33 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
+/* COMMON */
+
 .row {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+.box {
+	padding: 1%;
+}
+
+section {
+	padding: 80px 0;
+}
+
+
+
+/* CLEAR FLOAT */
+.clearfix {zoom:1}
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
 
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* Using color gradient to mask the background-image.*/
@@ -33,13 +56,6 @@ header {
 	width: 1140px;
 }
 
-section {
-	padding: 80px 0;
-}
-
-.box {
-	padding: 1%;
-}
 
 /* HEADINGS */
 
@@ -98,11 +114,27 @@ h2:after {
 	line-height: 145%;
 }
 
+/* ICONS */
+
 .icon-big {
 	font-size: 350%;
 	color: #e67e22;
 	display: block;
 	margin-bottom: 10px;
+}
+
+.icon-small {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #e67e22;
+	font-size: 120%;
+	margin-right: 10px;
+	/*Aliging the text and icons*/
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -4px;
+
 }
 
 /* BUTTONS */
@@ -185,6 +217,8 @@ h2:after {
 	border-bottom: 2px solid #e67e22; /*Transparent border to come up as Orange color*/
 }
 
+/* MEALS */
+
 .section-meals {
 	padding: 0;
 }
@@ -218,4 +252,81 @@ h2:after {
 .meal-photo img:hover {
 	opacity: 1;
 	transform: scale(1.03);
+}
+
+/* STEPS */
+
+.section-steps {
+	background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+	text-align: right; /* Text algin to align the inline element */
+	padding-right: 3%;
+	margin-top: 30px;
+}
+
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 70px;
+}
+
+.app-screen {
+	width: 40%;
+}
+
+.works-step {
+	margin-bottom: 50px;
+}
+
+.works-step div {
+	color: #e67e22;
+	border: 2px solid #e67e22;
+	display: inline-block;
+	border-radius: 50%;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	font-size: 150%;
+	padding: 10px;
+	float: left;
+	margin-right: 25px;
+}
+
+.works-step:last-of-type {
+	margin-bottom: 80px;
+}
+
+.btn-app img {
+	height: 50px;
+	width: auto;
+	margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+	border: 0;
+}
+
+/* CITIES */
+
+.box img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+a:link,
+a:visited {
+	color: #e67e22;
+	text-decoration:none;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #e67e22;
+	transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+	color: #555;
+	border-bottom: 1px solid transparent;
 }
